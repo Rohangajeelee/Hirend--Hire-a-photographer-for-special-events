@@ -18,35 +18,39 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import cam1 from "../assets/cam1.png";
 import cam2 from "../assets/cam2.jpg";
 import cam3 from "../assets/cam3.jpg";
+import { toast } from "react-toastify";
 
 export default function about() {
 
   function booked(){
     const hrs = document.getElementById("hours").value
-    if(hrs>1){
-    alert("Camera Successfully booked for "+hrs+" hour")
+    if(hrs.value>1){
+      toast.success("Camera Successfully booked for "+hrs+" hour and Total amount to be paid ₹4000")
   } else {
-    alert("Camera Successfully booked for "+hrs+" hours")
+    const price = hrs*4000
+    toast.success("Camera Successfully booked for "+hrs+" hours and Total amount to be paid ₹"+price)
 
   }
 
   }
   function booked2(){
     const hrs = document.getElementById("hours2").value
-    if(hrs>1){
-    alert("Camera Successfully booked for "+hrs+" hour")
+    if(hrs.value>1){
+      toast.success("Camera Successfully booked for "+hrs+" hour and Total amount to be paid ₹5000")
   } else {
-    alert("Camera Successfully booked for "+hrs+" hours")
+    const price = hrs*5000
+    toast.success("Camera Successfully booked for "+hrs+" hours and Total amount to be paid ₹"+price)
 
   }
 
   }
   function booked3(){
     const hrs = document.getElementById("hours3").value
-    if(hrs>1){
-    alert("Camera Successfully booked for "+hrs+" hour")
+    if(hrs.value>1){
+      toast.success("Camera Successfully booked for "+hrs+" hour and Total amount to be paid ₹6000")
   } else {
-    alert("Camera Successfully booked for "+hrs+" hours")
+    const price = hrs*6000
+    toast.success("Camera Successfully booked for "+hrs+" hours and Total amount to be paid ₹"+price)
 
   }
 
