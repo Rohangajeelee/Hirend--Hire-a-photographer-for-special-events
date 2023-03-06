@@ -20,6 +20,37 @@ import cam2 from "../assets/cam2.jpg";
 import cam3 from "../assets/cam3.jpg";
 
 export default function about() {
+
+  function booked(){
+    const hrs = document.getElementById("hours").value
+    if(hrs>1){
+    alert("Camera Successfully booked for "+hrs+" hour")
+  } else {
+    alert("Camera Successfully booked for "+hrs+" hours")
+
+  }
+
+  }
+  function booked2(){
+    const hrs = document.getElementById("hours2").value
+    if(hrs>1){
+    alert("Camera Successfully booked for "+hrs+" hour")
+  } else {
+    alert("Camera Successfully booked for "+hrs+" hours")
+
+  }
+
+  }
+  function booked3(){
+    const hrs = document.getElementById("hours3").value
+    if(hrs>1){
+    alert("Camera Successfully booked for "+hrs+" hour")
+  } else {
+    alert("Camera Successfully booked for "+hrs+" hours")
+
+  }
+
+  }
   return (
     <>
       <section id="/">
@@ -163,7 +194,7 @@ export default function about() {
                 <li>5-Axis Image Stabilization</li>
                 <li>Wi-Fi and Bluetooth Connectivity</li>
               </ul>
-              <input type="number" name="" className="hours"  placeholder="No. of Hours" min={"1"}
+              <input type="number" id="hours" className="hours"  placeholder="No. of Hours" min={"1"}
               style={{
                 width: "50%",
                 marginTop: "1rem",
@@ -175,7 +206,7 @@ export default function about() {
               }}/>
 
               
-              <button className="loginBtn">BOOK NOW</button>
+              <button className="loginBtn" onClick={booked}>BOOK NOW</button>
             </div>
             <div className="cameraCard">
               <div className="camBg">
@@ -194,7 +225,7 @@ export default function about() {
                 <li>ISO range of 100-102,400</li>
                 <li>191-point autofocus system</li>
               </ul>
-              <input type="number" name="" className="hours"  placeholder="No. of Hours" min={"1"}
+              <input type="number" id="hours2" className="hours"  placeholder="No. of Hours" min={"1"}
               style={{
                 width: "50%",
                 marginTop: "1rem",
@@ -204,7 +235,7 @@ export default function about() {
                 borderRadius: "24px",
                 
               }}/>
-              <button className="loginBtn">BOOK NOW</button>
+              <button className="loginBtn" onClick={booked2}>BOOK NOW</button>
             </div>
             <div className="cameraCard">
               <div className="camBg">
@@ -223,7 +254,7 @@ export default function about() {
                 <li>20 fps continuous shooting</li>
                 <li>693-point autofocus system</li>
               </ul>
-              <input type="number" name="" className="hours"  placeholder="No. of Hours" min={"1"}
+              <input type="number" id="hours3" className="hours"  placeholder="No. of Hours" min={"1"}
               style={{
                 width: "50%",
                 marginTop: "1rem",
@@ -233,7 +264,7 @@ export default function about() {
                 borderRadius: "24px",
                
               }}/>
-              <button className="loginBtn">BOOK NOW</button>
+              <button className="loginBtn" onClick={booked3}>BOOK NOW</button>
             </div>
           </div>
         </div>
